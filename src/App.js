@@ -8,7 +8,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { Button } from '@mui/material';
+import { Button, Container } from '@mui/material';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Radio from '@mui/material/Radio';
@@ -104,7 +104,7 @@ const onpop=(id)=>{
   return (  
     <>
     <h1 style={{backgroundColor:"red",border:"10px 10px",textAlign:"center",padding:"20px",color:"white"}}>CRUD APP</h1>
-    <h1>User Form</h1>
+    <h1 style={{backgroundColor:"blue",color:"white"}}>User Form</h1>
     <Box
       component="form"
       sx={{
@@ -158,12 +158,12 @@ const onpop=(id)=>{
         </Select>
       </FormControl><br/>
     
-      <Button variant="contained" type="submit">Submit</Button>
+      <Button variant="contained" type="submit" radius= "150px 150px 150px 150px">Submit</Button>
  
       
     </Box>
 
-     <h1>USER DATA</h1>
+     <h1 style={{backgroundColor:"blue",color:"white"}}>USER DATA</h1>
      <TableContainer component={Paper}>
       <Table sx={{ Minwidth: 650 }} aria-label="simple table">
         <TableHead>
